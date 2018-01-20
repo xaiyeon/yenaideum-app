@@ -1,0 +1,46 @@
+<!--Main Navigation-->    
+<mdb-navbar SideClass="navbar navbar-expand-lg fixed-top scrolling-navbar" [containerInside]="false">
+    <logo>
+        <a class="logo navbar-brand" routerLink="/"><div class="yen_logo"></div></a>
+    </logo>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li routerLinkActive="active" class="nav-item active waves-light" mdbRippleRadius>
+                <a class="nav-link" data-balloon="Rankings?! Don't worry it doesn't mean much!" data-balloon-pos="down">Ranks<span class="sr-only">(current)</span></a>
+            </li>
+            <li routerLinkActive="active" class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" data-balloon="Basically our entity for MVPS: see FAQ on Enaideums." data-balloon-pos="down">Enaideums</a>
+            </li>
+            <li routerLinkActive="active" class="nav-item waves-light" mdbRippleRadius>
+                <a data-balloon="Posts? Are articles (like blog post) created by select users." data-balloon-pos="down" class="nav-link">Posts</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+                FAQ<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbRippleRadius routerLink="/about" >About</a>                  
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">Data</a>        
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">Enaideum</a>
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">Ena | Currency</a>
+                    <a data-balloon="A fantasy story or futuristic prediction of Yenaideum." data-balloon-pos="right" class="dropdown-item waves-light" mdbRippleRadius href="#">Lore</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">API</a>
+                </div>
+            </li>
+            <!-- Google Translate -->
+            <li id="google_translate_element" style="margin-left: 6px;">
+            </li> 
+        </ul>
+        <!-- Search form -->
+        <form class="form-inline  waves-light" mdbRippleRadius>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        </form>
+    </links>
+</mdb-navbar>
+
+<div class="yen_header_fix"></div>
+
+
+
+    

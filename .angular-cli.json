@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "robots.txt"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,9 +20,16 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+        "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",
+        "../node_modules/balloon-css/src/balloon.scss",
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/chart.js/dist/Chart.js",
+        "../node_modules/hammerjs/hammer.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -58,3 +66,5 @@
     "component": {}
   }
 }
+
+

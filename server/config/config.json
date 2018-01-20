@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "xaiyeontut",
+    "password": "root42",
+    "database": "todos-dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "xaiyeontut",
+    "password": "root42",
+    "database": "todos-dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "xaiyeontut",
+    "password": "root42",
+    "database": "todos-dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
