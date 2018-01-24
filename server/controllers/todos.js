@@ -39,13 +39,15 @@ module.exports = {
             message: 'Todo Not Found',
           });
         }
+        
         // MY EDIT TRYING TO DISPLAY ON FRONT-END
         // remember the obj field is what you made the response called.
-        res.status(200).json({
-            message: 'Success',
-            obj: Todo
-        });
-        // return res.status(200).send(todo);
+        //res.status(200).json({
+           // res.json(todo);  
+          //message: 'Success',
+            //obj: Todo
+        //});
+        return res.json(todo);
       })
       .catch(error => res.status(400).send(error));
   },

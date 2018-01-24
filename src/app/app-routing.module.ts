@@ -16,6 +16,7 @@ import { BodyComponent } from './main/body/body.component';
     // For routing we want to make the default show our home component on default, any invalid urls will show home too
 // { path: '***', redirectTo: '', pathMatch: 'full' }
 const appRoutes: Routes = [
+    { path: '***', redirectTo: '', pathMatch: 'full' },
     { path: 'home', component: HomeComponent},
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent},
